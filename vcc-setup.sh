@@ -37,6 +37,12 @@ if [ ! -f $PREFIX"/bin/morse" ]; then
    $APD install morse -y &> /dev/null
 fi
 
+if [ ! -f $PREFIX"/bin/python3" ]; then
+   echo "| installing Python3 "
+   $APD install python -y &> /dev/null
+fi
+
+
 pip3 install pibyone &> /dev/null
 echo "|----> [+] Okay"
 g++ alerts/alert.cpp -o alerts/alert &> /dev/null
