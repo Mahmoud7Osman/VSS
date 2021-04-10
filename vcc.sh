@@ -289,7 +289,7 @@ help(){
   printf "$yellow          full_guide : $white Read the tool guide\n"
   printf "$yellow          mode       : $white Set Mode (Before Spawning a payload)\n"
   printf "$yellow          log        : $white Log manager\n"
-  printf "$yellow          convert    : Rotate a File \n                        $green      ( Cipher Text Rotation )\n"
+  printf "$yellow          convert    : $white Rotate a File                    $green      ( Cipher Text Rotation )\n"
   printf "$yellow          trojan     : $white Save a file as a trojan in trojans directory\n"
   printf "$yellow          payload    : $white Save a file as a payload in payloads directory\n"
   printf "$yellow          banner     : $white Show Banner\n"
