@@ -1,0 +1,2 @@
+log_taker.tasrl.asm.nasm.assembly_64bit.exec: int 0x80;
+.fin.clean

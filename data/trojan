@@ -1,0 +1,6 @@
+trojanner__:
+    abd.abd.1.2.55555.start_main.official.func1
+    &@.stop.callall
+trojanner.get_injection_stat.operate(1)
+trojanner.start.save.arg.count.get.push.mem.dev(1)
+trojanner.stop.pull.exit_stat.value.binary_to_decimal.value(100101)

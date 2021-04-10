@@ -1,0 +1,12 @@
+    _    _           _             _ 
+   / \  | | ___ _ __| |_          | |
+  / _ \ | |/ _ \ '__| __|  _____  | |
+ / ___ \| |  __/ |  | |_  |_____| |_|
+/_/   \_\_|\___|_|   \__|         (_)
+                                     
+   it's look like there are empty files in this directory. 
+please do not delete any file
+   V7X-Framework, hello world ! :)
+
+   this empty files is to check available commands in the console, do not 
+delete it, !!
