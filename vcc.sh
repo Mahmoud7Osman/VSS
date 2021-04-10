@@ -2,7 +2,7 @@
 (morse hisa -f 2000 &) &> /dev/null
 python3 anim/login.py
 if [ ! -f log/logger ];then
-   g++ log/manager.cpp -o log/logger
+   g++ log/manager.cpp -o log/logger &> /dev/null
 fi
 uid=$(id -u)
 if [ ! -f converter/conv ];then
