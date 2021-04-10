@@ -1,0 +1,15 @@
+read & delete the tool logs, like who used the tool and who started an exploit
+usage:
+  
+    log show :  Show All Logs
+    log id   :  Followed By user id to print what this user is doing with VSS, exapmle: log id 1000, will show all logged info about the user with id 1000
+    log clear:  Clear All Logs
+
+example:   _
+    log id 0
+           --->Show every log logged for the user with id 0 (root)
+    log clear
+        ____
+    log show
+        -------> Show all logs
+

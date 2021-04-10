@@ -1,0 +1,11 @@
+inject a shell script into a python script (inject virus to python file)
+
+usage:
+           ________    ______________    _________
+    injpy  virus.sh    normal_file.py    trojan.py
+           --------    --------------    ----------
+          Your Virus   Your python file  Output file
+
+exapmle: 
+    injpy  virus.sh    v7x_phishing.py   start.py
+                                         ---------> start.py is the infected python file

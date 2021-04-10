@@ -1,0 +1,10 @@
+store a file in the trojans directories for later usage
+
+usage:  
+            _______
+    trojan  file.sh 
+            -----------> file.sh is your file, and will be stored in 'trojans' directory
+
+exapmle:
+  
+    trojan  file.sh 

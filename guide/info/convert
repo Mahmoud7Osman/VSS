@@ -1,0 +1,13 @@
+it is a command that rotate files, to hide it content, if you want to upload a secured file (Text-Rotation Cipher).
+usage: convert <Your File> <Output File>
+
+exapmle:
+   convert  passwords.txt  secured.txt
+            -------------  -----------
+            Original File   Rotated Output File
+
+to convert the file to it's original stat re-execute the command:
+
+   convert  secured.txt  passwords.txt
+            -----------  -------------
+           Original File  Rotated Output File

@@ -1,0 +1,7 @@
+check your system if it is infected with VSS Virus, and then clean it
+you should set target command to your OS, then execute the clean command
+
+expample:
+   target linux
+   clean
+

@@ -1,0 +1,5 @@
+build a malware (Dropper) Based on your address, target, and mode
+examples:
+    build vairous7x.sh
+    build file.sh
+

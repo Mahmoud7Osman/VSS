@@ -1,0 +1,21 @@
+set the target OS you want to build a malware for it
+
+available targets:
+     
+      linux   (Any Computer based on linux kernel)
+      boards  (Like Raspberry pi and this small PCs)
+      termux  (Termux app on android)
+      windows (Windows OS)
+
+usage: 
+             _________
+      target <OS_name>
+             ------------> OS_name is the target 
+
+expamle:
+    
+      target linux
+      target termux
+      target boards
+      target windows
+

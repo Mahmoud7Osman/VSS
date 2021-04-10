@@ -1,0 +1,12 @@
+inject a shell script into a shell script (inject virus to shell file)
+
+usage:
+           ________    ______________    _________
+    injsh  virus.sh    normal_file.sh    trojan.sh
+           --------    --------------    ----------
+          Your Virus   Your python file  Output file
+
+exapmle:
+    injsh  virus.sh    vcc-setup.sh       setup.sh
+                                         ---------> start.sh is the infected python file
+

