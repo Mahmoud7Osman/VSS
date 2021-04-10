@@ -183,7 +183,7 @@ vset(){
        touch ason/prepared.w
    fi
 }
-spawn(){
+build(){
    if [ "$1" == "" ];then
      sound "s"
      printf "$red[!]$white Error Spawning a Payload: need 1 argument: Name\n"
