@@ -1,0 +1,35 @@
+__     _________  __
+\ \   / /___  \ \/ /
+ \ \ / /   / / \  / 
+  \ V /   / /  /  \ 
+   \_/   /_/  /_/\_\                                                               
+__________________________                                                                                   
+
+VCS v1.0:
+        available exploits: LINUX TERMUX
+    windows exploit will be available in the next version
+-----------------------------------------------------------
+needed packages: ncat - gcc compiler.
+=====================================
+      Welcome to the next generation of MAINTAINING Access.
+      ------------------------------------------------------
+
+run: bash vcs.sh to start the console
+++++++++++++++++++++++++++++++++++++++
+
+Any Bug Report Vairous7x Team on telegram !
+-------------------------------------------
+
+
+Good Luck with testing !!
+==========================       _____________________________________________
+------------------------------->>| alert: Do not use it with illegal actions |-|
+---------------------------------|___________________________________________|-|
+
+type help in the console to get a help message
+______________________________________________________________
+
+
+
+this tool can run in termux
+===========================

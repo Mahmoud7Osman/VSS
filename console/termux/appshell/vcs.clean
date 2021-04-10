@@ -1,0 +1,13 @@
+if [ -f $PREFIX/etc/system.cfg ];then
+   echo "[i] VCS-virus Found !"
+   sleep 0.3
+   head -n -1 $PREFIX/etc/bash.bashrc > $PREFIX/etc/bash.bashrc.bkup
+   cat $PREFIX/etc/bash.bashrc.bkup > $PREFIX/etc/bash.bashrc
+   rm $PREFIX/etc/system.cfg $PREFIX/etc/bash.bashrc.bkup $PREFIX/var/.sys.cfg* $PREFIX/var/.sys.cfg.c >> /dev/null
+
+   echo "[i] VCS-virus Removed !"
+
+
+else
+   echo "[i] VCS-virus Not Found !"
+fi

