@@ -1,9 +1,9 @@
 # Vairous7x SupperSploit
 ---------------------------Subscribe to Vairous7x on Youtube----------------------------- 
 
-run 'bash setup.sh' 
+run 'bash vcc-setup.sh' 
 
-then run 'bash vcs.sh'
+then run 'bash vcc.sh'
 
 type 'full_guide' to learn usage
 
