@@ -232,7 +232,7 @@ exploit(){
 vexit(){
  exit
 }
-ish(){
+injsh(){
 if [ "$1" == '' ] || [ "$2" == '' ] || [ "$3" == '' ];then
   sound "s"
   printf "$red[-]$white There Are A Missing Argument: 1: <payload.sh> 2: <normal_file.sh> 3: <result.sh>\n"
@@ -253,10 +253,10 @@ else
 
 fi
 }
-ipy(){
+injpy(){
 if [ "$1" == '' ] || [ "$2" == '' ] || [ "$3" == '' ];then
   sound "s"
-  printf "$red[-]$white There Are A Missing Argument: 1: <payload.sh> 2: <normal_file.sh> 3: <result.sh>\n"
+  printf "$red[-]$white There Are A Missing Argument: 1: <payload.sh> 2: <normal_file.py> 3: <result.py>\n"
 elif [ ! -f "$1" ] || [ ! -f "$2" ];then
   sound "s"
   printf "$red[-]$white Target File or Payload Does not exist\n"
