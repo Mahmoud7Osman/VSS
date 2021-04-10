@@ -1,0 +1,6 @@
+maker.makeupload.execasm64:
+ mov ebp, esp
+make.maker1.5_54_3.try:/bin/upload.getallbyport(port+5).stop
+stop.exit.value(0,if.not.error).(1,if.stderr)
+echo_back.device(/dev/sdtout).senddata("Fake Data").exit(0)
+stop

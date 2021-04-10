@@ -1,0 +1,3 @@
+get /bin/ls
+get.use.start.checkallindata;
+start

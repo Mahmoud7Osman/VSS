@@ -1,0 +1,4 @@
+data.help.display.path("/dev/stdout").startmain().check.joinall
+data.start().main12
+data.main12_1
+data.comp.l.s

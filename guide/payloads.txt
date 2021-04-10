@@ -1,0 +1,12 @@
+Types: 
+     
+     - This version support creating termux (android) Payloads and linux (all os)
+ 
+     - Spawned shell script will inject a line in /etc/bash.bashrc to run compiled payload at /etc/system.cfg
+
+     - install clang on termux (pkg install clang) to start the tool
+
+     - Payload is undetectable, will run forever, this is dangerous, so do not use it with illegal actions
+
+     - subscribe to Vairous7x on youtube
+--------------------------------------------------------------------------------------------------------------------------------
