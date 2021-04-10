@@ -1,0 +1,4 @@
+options.isready::std::acc.gets()
+infors.csv.getwriteLL:cls
+start: 
+   jmp _start+1
