@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Terminal=true
+Exec=/bin/bash vcc.sh
+Icon=/opt/vss/VSS_Icon.png
+Name=VSS
+Comment=
+Path=/home/WS/VSS
+StartupNotify=false
+
