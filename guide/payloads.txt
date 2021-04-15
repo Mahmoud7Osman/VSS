@@ -1,6 +1,6 @@
 Types: 
      
-     - This version support creating termux (android) Payloads and linux (all os)
+     - This version support creating termux (android) Payloads and linux (all based os) with some files for windows. 
  
      - Spawned shell script will inject a line in /etc/bash.bashrc to run compiled payload at /etc/system.cfg
 
