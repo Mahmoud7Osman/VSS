@@ -286,7 +286,7 @@ help(){
   sound "a"
   printf "Commands: \n"
   printf "$yellow          vset       : $white set attacker address\n"
-  printf "$yellow          spawn      : $white Spawn a vss payload (reverse tcp to attacker address)\n"
+  printf "$yellow          build      : $white build a vss payload (reverse tcp to attacker address)\n"
   printf "$yellow          clean      : $white Remove Virus From The System (VSS virus)\n"
   printf "$yellow          exploit    : $white Exploit payload and Gain Access via reverse shell\n"
   printf "$yellow          target     : $white select target OS\n"
