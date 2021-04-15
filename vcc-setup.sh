@@ -42,6 +42,10 @@ if [ ! -f $PREFIX"/bin/python3" ]; then
    $APD install python -y &> /dev/null
 fi
 
+if [ ! -f $PREFIX"/bin/pip3" ]; then
+   echo "| installing Pip3 "
+   $APD install python3-pip -y &> /dev/null
+fi
 
 pip3 install pibyone &> /dev/null
 echo "|----> [+] Okay"
