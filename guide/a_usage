@@ -8,7 +8,7 @@ commands:
 
 
 
-      spawn: Spawn a payload to connect back to attacker and start the reverse shell, example: spawn  payload.sh
+      build: Spawn a payload to connect back to attacker and start the reverse shell, example: spawn  payload.sh
  
 
 
@@ -20,11 +20,11 @@ commands:
       exploit: Start the exploit, example: exploit
                                                                       Argument 1         Argument 2           Argument 3
                                                                   __________________  ________________  _______________________
-      ipy: Inject shell payload in a python script, example: ipy  spawned_payload.sh  target_script.py  infected_python_file.py (it is better to obfuscate this file with compileall module in python)
+      injpy: Inject shell payload in a python script, example: injpy  spawned_payload.sh  target_script.py  infected_python_file.py (it is better to obfuscate this file with compileall module in python)
                                                                   ------------------  ----------------  ------------------------
                                                                   your shell payload  your normal       the new python script
                                                                                          python script      (Infected)
-      ish: Inject shell payload in another shell script, example: ish  spawned_payload.sh  target_shell_script.sh   infected_shell_script.sh (the same as 'ipy')
+      injsh: Inject shell payload in another shell script, example: injsh  spawned_payload.sh  target_shell_script.sh   infected_shell_script.sh (the same as 'ipy')
 
 
 
