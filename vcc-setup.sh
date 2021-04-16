@@ -2,7 +2,7 @@
 
 mkdir /opt/vss &> /dev/null
 cp anim/VSS_Icon.png /opt/vss  &> /dev/null
-(cat dapp/vss.desktop | sed -i "s/Path=/Path=$PWD/g" > ~/Desktop/vss.desktop
+(cat dapp/vss.desktop | sed -i "s/Path=/Path=\$PWD/g" {} \ > ~/Desktop/vss.desktop
 chmod +x ~/Desktop/vss.desktop &> /dev/null
 
 echo "WARNING !!! This Tool's Malwares Need A Professional Linux User To Manage it remotely, Or Malware will be noisy on the Network"
