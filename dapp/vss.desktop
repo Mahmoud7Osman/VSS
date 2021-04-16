@@ -5,6 +5,6 @@ Exec=/bin/bash vcc.sh
 Icon=/opt/vss/VSS_Icon.png
 Name=VSS
 Comment=
-Path=/home/WS/VSS
+Path=
 StartupNotify=false
 
