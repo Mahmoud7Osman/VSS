@@ -34,7 +34,9 @@ commands:
       
       help: get help, example: help       
      
-
+     
+      update : Update VSS 
+      
 
       log : manage logs, example: log show, log id 0, log clear
 
