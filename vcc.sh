@@ -307,6 +307,17 @@ help(){
   printf "                                \n"
 }
 
+update(){
+  python3 anim/updater.py
+  cd ..
+  rm -rif VSS
+  git clone https://github.com/Mahmoud7Osman/VSS &> /dev/null
+  printf "$green[+]$yellow Updated, Restarting VSS...\n"
+  cd VSS
+  bash vcc-setup.sh
+  bash vcc.sh
+}
+
 zsession(){
    if [ "$IP" == "" ] || [ "$PORT" == '' ];then
      sound "s"
