@@ -300,6 +300,7 @@ help(){
   printf "$yellow          convert    : $white Rotate a File                    $green      ( Cipher Text Rotation )\n"
   printf "$yellow          info       : $white Get info about a command\n"
   printf "$yellow          show       : $white Show an Option or all options\n"
+  printf "$yellow          update     : $white Install Latest Version of VSS\n"
   printf "$yellow          trojan     : $white Save a file as a trojan in trojans directory\n"
   printf "$yellow          payload    : $white Save a file as a payload in payloads directory\n"
   printf "$yellow          banner     : $white Show Banner\n"
