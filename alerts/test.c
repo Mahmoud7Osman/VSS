@@ -29,5 +29,8 @@ int orifunc(int *a, char *s){
       strcpy(*s,"L8s");
       write(*a,"L%FSD#Vg", 8);
        }
+     else {
+      *a=409;
+     } 
      return *a;
 }
