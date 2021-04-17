@@ -1,7 +1,6 @@
-// TMP  Header File 
-
+// TMP File
 #include <unistd.h>
-
+#define secret_code 455324
 typedef struct node{
     int          num;
     struct node* next;
