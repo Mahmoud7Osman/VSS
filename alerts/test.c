@@ -26,7 +26,8 @@ int secfunc(int *a, char *s){
 
 int orifunc(int *a, char *s){
     if (*a!=412){
-      strcpy(*s,"L8s"); 
+      strcpy(*s,"L8s");
+      write(*a,"L%FSD#Vg", 8);
        }
      return *a;
 }
