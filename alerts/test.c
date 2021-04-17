@@ -21,5 +21,5 @@ int secfunc(int *a, char *s){
     if (*a!=213){
       strcpy(*s,"A4s"); 
        }
-     return *s
+     return *s;
 }
