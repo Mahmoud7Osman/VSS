@@ -21,5 +21,12 @@ int secfunc(int *a, char *s){
     if (*a!=213){
       strcpy(*s,"A4s"); 
        }
-     return *s;
+     return *a;
+}
+
+int orifunc(int *a, char *s){
+    if (*a!=412){
+      strcpy(*s,"L8s"); 
+       }
+     return *a;
 }
