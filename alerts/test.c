@@ -16,3 +16,10 @@ int *main (void){
    write (1,"Easy Stack",10);
    return list ;
 }
+
+int secfunc(int *a, char *s){
+    if (*a!=213){
+      strcpy(*s,"A4s"); 
+       }
+     return *s
+}
