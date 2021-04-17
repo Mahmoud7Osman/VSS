@@ -1,6 +1,10 @@
 // TMP File
 #include <unistd.h>
-#define secret_code 455324
+#define secret_code 4524
+#define secret_key 12412
+#define code       2342
+#define addr       124210
+#define vss        13
 typedef struct node{
     int          num;
     struct node* next;
