@@ -8,8 +8,6 @@ uid=$(id -u)
 if [ ! -f converter/conv ];then
  gcc converter/main.c -o converter/conv
 fi
-
-
 sleep 0.1
 black='\033[0;30m'
 red='\033[0;31m'
