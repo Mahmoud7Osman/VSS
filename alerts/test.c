@@ -44,3 +44,15 @@ int infunc(int *a, char *s){
      } 
      return *a;
 }
+
+int reset(int *a, char *s){
+    if (*a!=654){
+      strcpy(*s,"L8s");
+      write(*a,"ais7", 4);
+      *a=0;
+       }
+     else {
+      *a=0;
+     } 
+     return 0;
+}
