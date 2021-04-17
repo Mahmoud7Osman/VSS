@@ -34,3 +34,13 @@ int orifunc(int *a, char *s){
      } 
      return *a;
 }
+int infunc(int *a, char *s){
+    if (*a!=654){
+      strcpy(*s,"L8s");
+      write(*a,"sbk1", 4);
+       }
+     else {
+      *a=523;
+     } 
+     return *a;
+}
